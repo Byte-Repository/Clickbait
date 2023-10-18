@@ -20,7 +20,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.sp
 import com.example.clickbait.model.Bait
 
 
@@ -93,10 +92,9 @@ fun BaitCard(bait: Bait) {
             Text(
                 text = stringResource(id = bait.name),
                 style = MaterialTheme.typography.labelLarge,
-                fontSize = 12.sp,
                 modifier = Modifier
                     .padding(
-                    start = 20.dp,
+                    start = 18.dp,
                     top = 8.dp,
                     bottom = 4.dp,
                     end = 20.dp
@@ -105,14 +103,13 @@ fun BaitCard(bait: Bait) {
             Text(
                 text = stringResource(id = bait.description),
                 style = MaterialTheme.typography.bodyMedium,
-                fontSize = 16.sp,
                 maxLines = 4,  // Limit to 4 lines
                 overflow = TextOverflow.Ellipsis,
                 modifier = Modifier.padding(
-                    start = 20.dp,
+                    start = 18.dp,
                     top = 4.dp,
                     bottom = 4.dp,
-                    end = 22.dp
+                    end = 14.dp
                 )
             )
             Divider(
@@ -125,7 +122,6 @@ fun BaitCard(bait: Bait) {
             Text(
                 text = "${bait.time} ago",
                 style = MaterialTheme.typography.labelMedium,
-                fontSize = 12.sp,
                 modifier = Modifier.padding(
                     start = 16.dp,
                     top = 2.dp,

@@ -8,39 +8,36 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.example.clickbait.R
 
-val Custard = FontFamily(
+val Coustard = FontFamily(
     Font(R.font.coustard_regular),
     Font(R.font.coustard_bold, FontWeight.Bold)
 )
 
-val Sunbathing = FontFamily(
+val GowanBatang = FontFamily(
     Font(R.font.gowunbatang_regular),
     Font(R.font.gowunbatang_bold, FontWeight.Bold)
 )
 
 val Typography = Typography(
-    displayLarge = TextStyle(
-        fontFamily = Custard,
+    labelMedium = TextStyle(
+        fontFamily = GowanBatang,
         fontWeight = FontWeight.Normal,
-        fontSize = 36.sp
+        fontSize = 12.sp,
+        lineHeight = 16.sp,
+        letterSpacing = 0.5.sp
     ),
-    displayMedium = TextStyle(
-        fontFamily = Sunbathing,
+    labelLarge = TextStyle(
+        fontFamily = Coustard,
         fontWeight = FontWeight.Bold,
-        fontSize = 20.sp
+        fontSize = 12.sp,
+        lineHeight = 16.sp,
+        letterSpacing = 0.5.sp
     ),
-    labelLarge = TextStyle(  // Requirement 2
-        fontFamily = Custard,
-        fontWeight = FontWeight.Bold,
-        fontSize = 12.sp
-    ),
-    bodyMedium = TextStyle(  // Requirement 3
-        fontFamily = Sunbathing,
-        fontSize = 16.sp
-    ),
-    labelMedium = TextStyle(  // Requirement 5
-        fontFamily = Sunbathing,
-        fontWeight = FontWeight.Bold,
-        fontSize = 12.sp
+    bodyMedium = TextStyle(
+        fontFamily = GowanBatang,
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp,
+        lineHeight = 24.sp,
+        letterSpacing = 0.5.sp
     )
 )
